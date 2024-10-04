@@ -1,6 +1,6 @@
 package calculadora; 
 
-Public class operaciones {
+public class operaciones {
 
     private double num1;
     private double num2;
@@ -27,6 +27,10 @@ Public class operaciones {
                 return num1 / num2;
                 } else { 
                     system.out.println ("no se puede dividir entre cero");
+                return Double.Nan; //devuelve "not a number" cuando es una division por 0
+                }
+            }
+}
 
 
 
